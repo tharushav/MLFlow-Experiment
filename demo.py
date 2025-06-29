@@ -56,7 +56,7 @@ if __name__ == "__main__":
     l1_ratio = float(sys.argv[2]) if len(sys.argv) > 2 else 0.5
 
     # Set up MLflow tracking URI before starting the run
-    remote_server_uri = "https://dagshub.com/tharushavihanga2003/MLFlow-Experiment.mlflow"
+    remote_server_uri = ""
     mlflow.set_tracking_uri(remote_server_uri)
 
     with mlflow.start_run():
